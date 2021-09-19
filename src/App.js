@@ -1,7 +1,7 @@
 import "./App.css";
 import Home from "./Components/Home/Home";
 import Navbar from "./Components/Navbar/Navbar";
-import { useSelector, useDispatch } from "react-redux";
+import { useSelector } from "react-redux";
 import  { createGlobalStyle } from "styled-components";
 
 const App = () => {
