@@ -1,0 +1,7 @@
+const ActionTypes = {
+    FETCH_DATA_REQUEST: ' FETCH_DATA_REQUEST',
+    FETCH_DATA_SUCCES : "FETCH_DATA_SUCCES",
+    FETCH_DATA_ERROR :"FETCH_DATA_ERROR "
+}
+
+export default ActionTypes
