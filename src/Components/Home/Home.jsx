@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { fetchDataAction } from '../../Redux/Reducers/users/action'
 import { useSelector, useDispatch } from 'react-redux'
 const Home = () => {
-    const { data, loading, err } = useSelector(({ data }) => data)
+    const { data, loading } = useSelector(({ data }) => data)
     const dispatch = useDispatch()
     const [ResultsNumber, setResultsNumber] = useState(5)
     const [PageNumber, setPageNumber] = useState(1)
@@ -15,8 +15,8 @@ const Home = () => {
     }
     useEffect(() => {
         dispatch(fetchDataAction(ResultsNumber, PageNumber))
-        console.log(data);
     }, [dispatch, ResultsNumber, PageNumber])
+    
     return (
         <>
 

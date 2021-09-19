@@ -2,13 +2,10 @@ import "./App.css";
 import Home from "./Components/Home/Home";
 import Navbar from "./Components/Navbar/Navbar";
 import { useSelector, useDispatch } from "react-redux";
-import styled, { createGlobalStyle } from "styled-components";
-import { changeAppTheme } from "./Redux/Reducers/ui/ui.action";
+import  { createGlobalStyle } from "styled-components";
 
 const App = () => {
   const { isLight } = useSelector(({ ui }) => ui);
-  console.log(isLight);
-  const dispatch = useDispatch();
   const GlobalStyles = createGlobalStyle`
   body{
     background-color:${isLight ? "#000" : "#fff"};
